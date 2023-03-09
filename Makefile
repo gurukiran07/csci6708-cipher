@@ -7,7 +7,7 @@ SRC_FILES = src/*.cpp
 run: main
 	./main 
 
-main: playfair.o 
+main: playfair.o src/main.cpp
 	$(CXX) $(CXXFLAGS) -I $(HEADERS) playfair.o src/main.cpp -o main
 
 
