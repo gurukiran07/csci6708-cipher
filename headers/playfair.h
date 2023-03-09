@@ -2,6 +2,7 @@
 #include <array>
 
 namespace crypt{
+    const std::string ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 class playfair{
     std::string cipher_text;
