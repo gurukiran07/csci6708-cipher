@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -pedantic -pedantic-errors -Wnarrowing -Wall -Werror
+CXXFLAGS = -std=c++11 -pedantic -pedantic-errors -Wnarrowing -Wsign-compare -Wall -Werror
 HEADERS = headers/
 SRC_FILES = src/*.cpp
 
