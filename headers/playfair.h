@@ -1,3 +1,6 @@
+#ifndef PLAYFAIR_CIPHER_CSCI6708_H
+#define PLAYFAIR_CIPHER_CSCI6708_H
+
 #include <string>
 #include <array>
 #include <vector>
@@ -26,3 +29,5 @@ namespace crypt{
     std::string decrypt(std::string, matrix_t);
     void print(matrix_t, std::string, std::string);
 }
+
+#endif
