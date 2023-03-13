@@ -7,12 +7,14 @@ SRC_FILES = src/*.cpp
 run: main
 	./main 
 
-main: playfair.o src/main.cpp
-	$(CXX) $(CXXFLAGS) -I $(HEADERS) playfair.o src/main.cpp -o main
-
+main: playfair.o transposition.o src/main.cpp
+	$(CXX) $(CXXFLAGS) -I $(HEADERS) playfair.o transposition.o src/main.cpp -o main
 
 playfair.o: src/playfair.cpp headers/playfair.h
 	$(CXX) $(CXXFLAGS) -I $(HEADERS) -c src/playfair.cpp -o playfair.o
+
+transposition.o: src/transposition.cpp headers/transposition.h
+	$(CXX) $(CXXFLAGS) -I $(HEADERS) -c src/transposition.cpp -o transposition.o
 
 .PHONY: clean
 clean: 

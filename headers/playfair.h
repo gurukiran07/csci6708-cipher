@@ -8,6 +8,7 @@
 
 namespace crypt {
 
+namespace playfair{
 const std::string ALPHABETS = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
 const std::string PUNCTUATION = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~\n";
 const char REPEATED_CHAR_Q = 'Q';
@@ -28,6 +29,8 @@ digraph_t make_digraphs(std::string);
 std::string encrypt(std::string, matrix_t);
 std::string decrypt(std::string, matrix_t);
 void print(matrix_t, std::string, std::string);
+}
+
 } // namespace crypt
 
 #endif

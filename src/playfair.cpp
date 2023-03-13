@@ -3,9 +3,10 @@
 #include <algorithm>
 #include <iostream>
 #include <set>
-#include <unordered_set>
 
 namespace crypt {
+
+namespace playfair{
 
 matrix_t generate_matrix(std::string secret_key) {
   secret_key.erase(
@@ -164,6 +165,8 @@ void print(matrix_t matrix, std::string secret_key, std::string plain_text) {
   std::cout << "\n\n";
   std::cout << "ENCRYPTED TEXT: " << cipher_text << "\n";
   std::cout << "DECRYPTED TEXT: " << decrypt(cipher_text, matrix) << "\n";
+}
+
 }
 
 } // namespace crypt
