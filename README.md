@@ -31,7 +31,7 @@ $ git clone git@github.com:gurukiran07/csci6708-cipher.git
 
 ## Running the code
 
-After cloning or downloading from brightspace change into `csci6708-cipher/` directory. Now, run `make` to compile and run the code.
+After cloning or downloading from brightspace change into `csci6708-cipher/` directory. Now, run `make` to compile and run the code. If files are downloaded from brightspace then `cd code/`. If clone from github and git.cs.dal.ca then `cd csci6708-cipher/`.
 
 ```
 $ cd csci6708-cipher/
