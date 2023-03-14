@@ -151,22 +151,11 @@ void print(matrix_t matrix, std::string secret_key, std::string plain_text) {
   }
   std::cout << "\n";
 
-  std::cout << "PLAIN TEXT: " << plain_text << "\n";
+  std::cout << "PLAIN TEXT: " << plain_text << "\n\n";
   std::cout << "SECRET KEY: " << secret_key << "\n\n";
-
-  std::cout << "DIGRAPHS:\n";
-  for (auto &p : make_digraphs(plain_text)) {
-    std::cout << p.first << p.second << " ";
-  }
-  std::cout << "\n";
-  for (auto &p : make_digraphs(cipher_text)) {
-    std::cout << p.first << p.second << " ";
-  }
-  std::cout << "\n\n";
-  std::cout << "ENCRYPTED TEXT: " << cipher_text << "\n";
+  std::cout << "ENCRYPTED TEXT: " << cipher_text << "\n\n";
   std::cout << "DECRYPTED TEXT: " << decrypt(cipher_text, matrix) << "\n";
 }
-
 }
 
 } // namespace crypt
